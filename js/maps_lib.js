@@ -82,7 +82,7 @@ var MapsLib = {
     MapsLib.searchrecords = null;
 
     //MODIFY to match 3-bucket GFT values of pre-checked polygon1  - see also further below
-    MapsLib.setDemographicsLabels("$25&ndash;50k", "$50&ndash;100k", "$100&ndash;215k");
+    MapsLib.setDemographicsLabels("very low", "low", "average", "high", "very high");
 
     // MODIFY if needed: defines background polygon1 and polygon2 layers
     MapsLib.polygon1 = new google.maps.FusionTablesLayer({
@@ -170,34 +170,34 @@ var MapsLib = {
     // MODIFY if needed: shows background polygon layer depending on which checkbox is selected
     if ($("#rbPolygon1").is(':checked')) {
       MapsLib.polygon1.setMap(map);
-      MapsLib.setDemographicsLabels("$25&ndash;50k", "$50&ndash;100k", "$100&ndash;215k"); //MODIFY to match 3 buckets in GFT
+      MapsLib.setDemographicsLabels("very low", "low", "average", "high", "very high");
     }
     if ($("#rbPolygon2").is(':checked')) {
       MapsLib.polygon2.setMap(map);
-      MapsLib.setDemographicsLabels("2&ndash;8%", "8&ndash;14%", "14&ndash;21%"); //MODIFY to match 3 buckets in GFT
+      MapsLib.setDemographicsLabels("very low", "low", "average", "high", "very high");
     }
     if ($("#rbPolygon3").is(':checked')) {
       MapsLib.polygon3.setMap(map);
-      MapsLib.setDemographicsLabels("2&ndash;8%", "8&ndash;14%", "14&ndash;21%"); //MODIFY to match 3 buckets in GFT
+      MapsLib.setDemographicsLabels("very low", "low", "average", "high", "very high");
     }
     if ($("#rbPolygon4").is(':checked')) {
       MapsLib.polygon4.setMap(map);
-      MapsLib.setDemographicsLabels("2&ndash;8%", "8&ndash;14%", "14&ndash;21%"); //MODIFY to match 3 buckets in GFT
+      MapsLib.setDemographicsLabels("very low", "low", "average", "high", "very high");
     }
     if ($("#rbPolygon5").is(':checked')) {
       MapsLib.polygon5.setMap(map);
-      MapsLib.setDemographicsLabels("2&ndash;8%", "8&ndash;14%", "14&ndash;21%"); //MODIFY to match 3 buckets in GFT
+      MapsLib.setDemographicsLabels("very low", "low", "average", "high", "very high");
     }
     if ($("#rbPolygon6").is(':checked')) {
       MapsLib.polygon6.setMap(map);
-      MapsLib.setDemographicsLabels("2&ndash;8%", "8&ndash;14%", "14&ndash;21%"); //MODIFY to match 3 buckets in GFT
+      MapsLib.setDemographicsLabels("very low", "low", "average", "high", "very high");
     }
     if ($("#rbPolygon7").is(':checked')) {
       MapsLib.polygon7.setMap(map);
-      MapsLib.setDemographicsLabels("2&ndash;8%", "8&ndash;14%", "14&ndash;21%"); //MODIFY to match 3 buckets in GFT
+      MapsLib.setDemographicsLabels("very low", "low", "average", "high", "very high");
     }
     if ($("#rbPolygonOff").is(':checked')) {   //the Off statement does not contain a setMap
-      MapsLib.setDemographicsLabels("&ndash;", "&ndash;", "&ndash;");
+      MapsLib.setDemographicsLabels("&ndash;", "&ndash;", "&ndash;", "&ndash;", "&ndash;");
     }
 
     var address = $("#search_address").val();
@@ -298,7 +298,7 @@ var MapsLib = {
       MapsLib.polygon6.setMap(null);
     if (MapsLib.polygon7 != null)
       MapsLib.polygon7.setMap(null);
-    if (MapsLib.polygonOFF !=null) 
+    if (MapsLib.polygonOFF !=null)
       MapsLib.polygonOff.setMap(null);
     if (MapsLib.addrMarker != null)
       MapsLib.addrMarker.setMap(null);
@@ -306,15 +306,21 @@ var MapsLib = {
       MapsLib.searchRadiusCircle.setMap(null);
   },
 
-  setDemographicsLabels: function(left, middle, right) {
-    $('#legend-left').fadeOut('fast', function(){
-      $("#legend-left").html(left);
+  setDemographicsLabels: function(one, two, three, four, five) {
+    $('#legend-1').fadeOut('fast', function(){
+      $("#legend-1").html(one);
     }).fadeIn('fast');
-    $('#legend-middle').fadeOut('fast', function(){
-      $("#legend-middle").html(middle);
+    $('#legend-2').fadeOut('fast', function(){
+      $("#legend-2").html(two);
     }).fadeIn('fast');
-    $('#legend-right').fadeOut('fast', function(){
-      $("#legend-right").html(right);
+    $('#legend-3').fadeOut('fast', function(){
+      $("#legend-3").html(three);
+    }).fadeIn('fast');
+    $('#legend-4').fadeOut('fast', function(){
+      $("#legend-4").html(four);
+    }).fadeIn('fast');
+    $('#legend-5').fadeOut('fast', function(){
+      $("#legend-5").html(five);
     }).fadeIn('fast');
   },
 

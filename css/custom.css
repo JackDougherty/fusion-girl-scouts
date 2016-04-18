@@ -6,12 +6,21 @@ a:hover { color: #4B58A6; }
 }
 /*empty comment
 
-/* MODIFY polygon legend colors (left, middle, right) to match 3-color buckets in your Google Fusion Table. See also http://ColorBrewer2.org*/
-#legend-left { border-top: 10px solid #FDBE85; }
-#legend-middle { border-top: 10px solid #FD8D3C; }
-#legend-right { border-top: 10px solid #D94701; }
+/* MODIFY polygon legend colors to match 5-color buckets in your Google Fusion Table. See also http://ColorBrewer2.org*/
+/* temp daisy colors */
+#legend-1 { border-top: 10px solid #404040; }
+#legend-2 { border-top: 10px solid #bababa; }
+#legend-3 { border-top: 10px solid #ffffff; }
+#legend-4 { border-top: 10px solid #92c5de; }
+#legend-5 { border-top: 10px solid #0571b0; }
+/* temp brownie colors */
+#legend-1 { border-top: 10px solid #404040; }
+#legend-2 { border-top: 10px solid #bababa; }
+#legend-3 { border-top: 10px solid #ffffff; }
+#legend-4 { border-top: 10px solid #dfc27d; }
+#legend-5 { border-top: 10px solid #a6611a; }
 #polygon-legend { background: none; clear: both; margin-bottom: 0.3em; padding: 8px 0 0 0; margin: 15px 0 0 0; list-style: none; }
-#polygon-legend li { width: 32%; float: left; margin: 0 1% 10px 0; white-space: nowrap; text-align: center; font-size: 11px; color: #77787b; }
+#polygon-legend li { width: 18%; float: left; margin: 0 1% 10px 0; white-space: nowrap; text-align: center; font-size: 11px; color: #77787b; }
 
 .filter-yellow { background-color: #FBF358; }
 .filter-green { background-color: #00E13C; }
@@ -22,11 +31,11 @@ a:hover { color: #4B58A6; }
 /* remove markers before unordered list */
 ul.unstyled {list-style-type:none;}
 /* blocking and spacing for polygon list*/
-.radio {display:inline-block; margin-top: 0px; margin-bottom: 0px;} 
+.radio {display:inline-block; margin-top: 0px; margin-bottom: 0px;}
 
-.filter-box { 
-  height: 15px; 
-  width: 15px;  
+.filter-box {
+  height: 15px;
+  width: 15px;
   display: inline-block;
   *border-right-width: 2px;
   *border-bottom-width: 2px;
@@ -35,7 +44,7 @@ ul.unstyled {list-style-type:none;}
           border-radius: 5px;
   -webkit-background-clip: padding-box;
      -moz-background-clip: padding;
-          background-clip: padding-box; 
+          background-clip: padding-box;
 }
 
 canvas {-ms-touch-action: double-tap-zoom;}

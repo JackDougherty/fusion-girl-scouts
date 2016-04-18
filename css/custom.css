@@ -6,19 +6,13 @@ a:hover { color: #4B58A6; }
 }
 /*empty comment
 
-/* MODIFY polygon legend colors to match 5-color buckets in your Google Fusion Table. See also http://ColorBrewer2.org*/
-/* temp daisy colors */
+/* SEE OTHER polygon legend colors in maps_lib.js */
+/* initially set to temp daisy colors */
 #legend-1 { border-top: 10px solid #404040; }
 #legend-2 { border-top: 10px solid #bababa; }
 #legend-3 { border-top: 10px solid #ffffff; }
 #legend-4 { border-top: 10px solid #92c5de; }
 #legend-5 { border-top: 10px solid #0571b0; }
-/* temp brownie colors */
-#legend-1 { border-top: 10px solid #404040; }
-#legend-2 { border-top: 10px solid #bababa; }
-#legend-3 { border-top: 10px solid #ffffff; }
-#legend-4 { border-top: 10px solid #dfc27d; }
-#legend-5 { border-top: 10px solid #a6611a; }
 #polygon-legend { background: none; clear: both; margin-bottom: 0.3em; padding: 8px 0 0 0; margin: 15px 0 0 0; list-style: none; }
 #polygon-legend li { width: 18%; float: left; margin: 0 1% 10px 0; white-space: nowrap; text-align: center; font-size: 11px; color: #77787b; }
 

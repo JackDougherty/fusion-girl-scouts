@@ -4,7 +4,7 @@ fusion-girl-scouts
 Searchable point and polygon layer map, with dynamic legend, using Google Maps and Fusion Tables
 
 ## Demo
-http://jackdougherty.github.io/fusion-girl-scouts/
+http://jackdougherty.github.io/fusion-girl-scouts/index.html
 
 ## Demo iframe
 http://jackdougherty.github.io/fusion-girl-scouts/index_iframe.html

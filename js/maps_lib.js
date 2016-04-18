@@ -171,10 +171,24 @@ var MapsLib = {
     if ($("#rbPolygon1").is(':checked')) {
       MapsLib.polygon1.setMap(map);
       MapsLib.setDemographicsLabels("very low", "low", "average", "high", "very high");
+      /* temp daisy colors */
+      /* testing http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_css_set_multiple */
+      $("legend-1").css({"border-top": "#404040"});
+      $("legend-2").css({"border-top": "#bababa"});
+      $("legend-3").css({"border-top": "#ffffff"});
+      $("legend-4").css({"border-top": "#92c5de"});
+      $("legend-5").css({"border-top": "#0571b0"});
     }
     if ($("#rbPolygon2").is(':checked')) {
       MapsLib.polygon2.setMap(map);
       MapsLib.setDemographicsLabels("very low", "low", "average", "high", "very high");
+      /* temp brownie colors */
+      /* testing http://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_css_set_multiple */
+      $("legend-1").css({"border-top": "#404040"});
+      $("legend-2").css({"border-top": "#bababa"});
+      $("legend-3").css({"border-top": "#ffffff"});
+      $("legend-4").css({"border-top": "#dfc27d"});
+      $("legend-5").css({"border-top": "#a6611a"});
     }
     if ($("#rbPolygon3").is(':checked')) {
       MapsLib.polygon3.setMap(map);

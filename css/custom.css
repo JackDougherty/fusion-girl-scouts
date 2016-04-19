@@ -4,17 +4,27 @@ a:hover { color: #4B58A6; }
 #map_canvas img {
   max-width: none;
 }
-/*empty comment
 
-/* SEE OTHER polygon legend colors in maps_lib.js */
-/* initially set to temp daisy colors */
-#legend-1 { border-top: 10px solid #404040; }
-#legend-2 { border-top: 10px solid #bababa; }
-#legend-3 { border-top: 10px solid #ffffff; }
-#legend-4 { border-top: 10px solid #92c5de; }
-#legend-5 { border-top: 10px solid #0571b0; }
-#polygon-legend { background: none; clear: both; margin-bottom: 0.3em; padding: 8px 0 0 0; margin: 15px 0 0 0; list-style: none; }
-#polygon-legend li { width: 18%; float: left; margin: 0 1% 10px 0; white-space: nowrap; text-align: center; font-size: 11px; color: #77787b; }
+/* See dynamic polygon legend colors in maps_lib.js */
+
+#polygon-legend {
+  background: none;
+  lear: both;
+  margin-bottom: 0.3em;
+  padding: 8px 0 0 0;
+  margin: 15px 0 0 0;
+  list-style: none;
+}
+#polygon-legend li {
+  width: 18%;
+  float: left;
+  margin: 0 1% 10px 0;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 11px;
+  color: #77787b;
+  border-top: 10px solid; /*added for dynamic legend */
+}
 
 .filter-yellow { background-color: #FBF358; }
 .filter-green { background-color: #00E13C; }
